@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1>Cadastre-se</h1>
+            <p>É rápido e fácil.</p>
+            <form>
+                <div class="name-fields">
+                    <input type="text" id="name" placeholder="Nome" required>
+                    <input type="text" id="lastname" placeholder="Sobrenome" required>
+                </div>
+                <input type="email" id="email" placeholder="E-mail ou número de celular" required>
+                <input type="password" id="password" placeholder="Nova senha" required>
+                <input type="password" name="confirm-password" placeholder="Confirme a senha" id="confirm-password" required>
+
+                <div class="birthdate">
+                    <label for="birthdate">Data de nascimento</label>
+                    <div class="birthdate-fields">
+                        <select name="day" id="day">
+                            <option value="">Dia</option>
+                            <!-- opções de dias -->
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <!-- Adicionar os demais dias -->
+                        </select>
+                        <select name="month" id="month">
+                            <option value="">Mês</option>
+                            <option value="1">Janeiro</option>
+                            <option value="2">Fevereiro</option>
+                            <!-- Adicionar os demais meses -->
+                        </select>
+                        <select name="year" id="year">
+                            <option value="">Ano</option>
+                            <option value="2000">2000</option>
+                            <option value="1999">1999</option>
+                            <!-- Adicionar os demais anos -->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="gender">
+                    <label>Gênero:</label>
+                    <div class="gender-options">
+                        <label><input type="radio" name="gender" value="feminino"> Feminino</label>
+                        <label><input type="radio" name="gender" value="masculino"> Masculino</label>
+                        <label><input type="radio" name="gender" value="personalizado"> Personalizado</label>
+                    </div>
+                </div>
+
+                <button type="submit" id="cadastar">Cadastrar-se</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
