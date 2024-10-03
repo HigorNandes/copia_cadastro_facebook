@@ -69,7 +69,6 @@ button:hover {
     background-color: #36a420;
 }
 
-.birthdate-fields,
 .gender-options {
     display: flex;
     justify-content: space-between;
